@@ -11,6 +11,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .blockUpCorner{
@@ -105,6 +106,11 @@ main{
 .Screen3{
     width: 100%;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 810px;
 }
 
 .Screen4{
@@ -378,8 +384,299 @@ main{
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../assets/images/danger.svg);
+}
+
+.furstBLock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+}
+
+.furstBlockSmall{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 24px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.lampSVG{
+    width: 70px;
+    height: 70px;
+    border-radius: 76px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/lamp.svg);
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    padding: 11px;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid #7C6365;
+    border-radius: 13px;
+    align-items: center;
+}
+
+.statusText{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Truetypewriter PolyglOTT';
+    font-size: 63px;
+    line-height: 91%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 29px;
+    gap: 10px;
+    background: #7C6365;
+    border: 6px solid #FFFFFF;
+    border-radius: 13px;
+}
+
+.secondBLock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 298px;
+}
+
+.sumSVG{
+    display: flex;
+    width: 270px;
+    height: 152px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/switch1.svg);
 
 }
 
+.bar{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
 
+.blackBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+}
 
+.lampBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 600px;
+    height: 44px;
+}
+
+.lamps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 3px;
+    gap: 17px;
+    width: 254px;
+    height: 33px;
+    background: #CDCDCF;
+    border-radius: 6px;
+}
+
+.lamp{
+    width: 20px;
+    height: 20px;
+    
+    border: 2px solid #000000;
+    border-radius: 63px;
+}
+
+.yellow{
+    background: #E0B36F;
+}
+
+.brown{
+    background: #7C6365;
+}
+
+.diagram{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px 57px;
+    gap: 10px;
+    width: 329px;
+    height: 142px;
+    background: #7C6365;
+    border: 4px solid #FFFFFF;
+    border-radius: 13px;
+}
+
+.miniBlackBar{
+    width: 28px;
+    height: 142px;
+    background: #000000;
+}
+
+.bigBlockPlanets{
+    display: flex;
+    padding: 25px 35px;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.blockPlanetsButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: fit-content;
+    height: fit-content;
+    padding: 11px;
+}
+
+.cosmos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    gap: 10px;
+    width: 366px;
+    height: 366px;
+    border: 3px solid #7C6365;
+    border-radius: 13px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87px;
+    height: 216px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/buttons.svg);
+}
+
+.planets{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+    gap: 10px;
+    width: 340px;
+    height: 340px;
+    background: #7C6365;
+    border: 6px solid #FFFFFF;
+    border-radius: 13px;
+}
+
+.planetsmall{
+    position: absolute;
+    width: 147px;
+    height: 183px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/smallPlanet.svg);
+    z-index: 4;
+}
+
+.planetmedium{
+    position: absolute;
+    width: 275px;
+    height: 227px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/middlePlanet.svg);
+    z-index: 3;
+}
+
+.planetbig{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/bigPlanet.svg);
+    z-index: 2;
+}
+
+.bigBlocklever{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
+}
+
+.baseLever{
+    position: relative;
+    display: flex;
+    width: 317px;
+    height: 20px;
+    background: #CDCDCF;
+    z-index: 2;
+}
+
+.leverSvg{
+    position: absolute;
+    width: 540px;
+    height: 382px;
+    top: -1250%;
+    left: -35%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/lever.svg);
+    z-index: 1;
+}
+
+.thirdBLock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
