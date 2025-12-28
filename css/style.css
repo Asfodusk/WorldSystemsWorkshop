@@ -99,6 +99,7 @@ main{
     display: flex;
     align-items: center;
     padding: 29px 0px;
+    overflow: hidden;
 }
 
 .Screen3{
@@ -174,6 +175,7 @@ main{
 .bigScreen{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: fit-content;
     background: #7C6365;
@@ -376,7 +378,7 @@ main{
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../assets/images/danger.svg);
-    
+
 }
 
 
