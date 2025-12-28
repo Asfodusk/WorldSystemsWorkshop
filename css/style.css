@@ -114,6 +114,7 @@ main{
 }
 
 .Screen4{
+    position: relative;
     width: 100%;
     height: 719px;
 }
@@ -679,4 +680,52 @@ main{
     align-items: center;
     width: 100%;
     height: fit-content;
+}
+
+.Gears{
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 40px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Gear1{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/gear_medium.svg);
+    width: 140px;
+    height: 300px;
+}
+
+.Gear2{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/gear_small.svg);
+    width: 79px;
+    height: 156px;
+
+}
+
+.Gear3{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/gear_big.svg);
+    width: 196px;
+    height: 300px;
+}
+
+.pipes{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/pipes.svg);
+    width: 196px;
+    height: 300px;
+}
+
+.joins{
+
 }
