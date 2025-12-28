@@ -1,5 +1,15 @@
 @font-face {
-    font-family: 'Phorssa';
-    src: url('../assets/fonts/Phorssa.ttf') format(truetype);
-    font-weight: 400;
+    font-family: 'Truetypewriter PolyglOTT';
+    src: url(../assets/fonts/TTWPGOTT.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Adygh';
+    src: url(../assets/fonts/Adygh.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
