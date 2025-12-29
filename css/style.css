@@ -2,12 +2,16 @@
 @import url('font.css');
 
 body{
+    clip-path: inset(0 0 0 0);
     width: 98%;
     height: fit-content;
     font-family: 'Phorssa';
     background-color: #593537;
     border: #CDCDCF 1vw solid;
-    overflow-x: hidden;
+}
+
+.forHidden{
+
 }
 main{
     border: 1vw solid #CDCDCF;
@@ -48,7 +52,7 @@ main{
 
 .cornerRoundBig1{
     transform: translate( -8.5vw , 1vw);
-    top: 281.5vw;
+    top: 279vw;
     position: absolute;
     width: 15vw;
     height: 15vw;
@@ -58,7 +62,7 @@ main{
 
 .cornerRoundSmall1{
     transform: translate(-50%, 0%);
-    top: 284vw;
+    top: 281.5vw;
     position: absolute;
     width: 12vw;
     height: 12vw;
@@ -89,7 +93,7 @@ main{
 .cornerRoundBig3{
     left: 100vw;
     transform: translate( -8.5vw , 1vw);
-    top: 281.5vw;
+    top: 279vw;
     position: absolute;
     width: 15vw;
     height: 15vw;
@@ -100,7 +104,7 @@ main{
 .cornerRoundSmall3{
     left: 100vw;
     transform: translate(-50%, 0%);
-    top: 284vw;
+    top: 281.5vw;
     position: absolute;
     width: 12vw;
     height: 12vw;
@@ -143,8 +147,37 @@ main{
 }
 
 .diskSVG{
-    width: 50vw;
-    height: 30vw;
+    width: 45vw;
+    height: 27vw;
+}
+
+.furstSvgs{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    align-items: end;
+    gap: 1.3vw;
+}
+
+.gearBig1{
+    width: 12vw;
+    height: 12vw;
+}
+
+.gearSmall1{
+    width:7.5vw;
+    height: 7.5vw;
+}
+
+.gearBig2{
+    width: 12vw;
+    height: 12vw;
+}
+
+.gearSmall2{
+    width:7.5vw;
+    height: 7.5vw;
 }
 
 .title{
@@ -543,7 +576,6 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    padding: 0px 5vw;
     gap: 1vw;
     width: 30vw;
     height: 14vw;
@@ -618,9 +650,6 @@ main{
     position: absolute;
     width: 14vw;
     height: 18vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -632,9 +661,6 @@ main{
     position: absolute;
     width: 27vw;
     height: 24vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -646,9 +672,6 @@ main{
     position: absolute;
     width: 29vw;
     height: 29vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -667,6 +690,8 @@ main{
 .baseLever{
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30vw;
     height: 6vw;
     background: #CDCDCF;
@@ -675,10 +700,8 @@ main{
 
 .leverSvg{
     position: absolute;
-    width: 52vw;
-    height: 38vw;
-    top: -400%;
-    left: -35%;
+    width: 53vw;
+    height: 52vw;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -752,4 +775,329 @@ main{
     background-image: url(../assets/images/joins.svg);
     width: 100%;
     height: 50vw;
+}
+
+.dinner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3vw 1.3vw;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+}
+
+.breakSign{
+    display: flex;
+    padding: 1vw;
+    gap: 1vw;
+    width: fit-content;
+    height: fit-content;
+    border: 0.3vw solid #7C6365;
+    border-radius: 2vw;
+}
+
+.lampsdinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 1vw;
+    gap: 11px;
+    width: 7vw;
+    height: 15vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/lamps.svg);
+}
+
+.textBigBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw 1vw;
+    width: fit-content;
+    height: fit-content;
+    background: #7C6365;
+    border: 1vw solid #FFFFFF;
+    border-radius: 1vw;
+}
+
+.text1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw 3vw;
+    gap: 1vw;
+    width: 30vw;
+    height: 11vw;
+    font-family: 'Truetypewriter PolyglOTT';
+    font-size: 6vw;
+    line-height: 91%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text2{
+    font-family: 'Truetypewriter PolyglOTT';
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1vw;
+    gap: 1vw;
+    width: 20vw;
+    height: 10vw;
+    white-space: nowrap;
+}
+
+.flexBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+
+    .Screen3{
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .secondBLock{
+        flex-direction: column;
+        height: 70vw;
+        gap: 10vw;
+    }
+
+    .sumSVG{
+        transform: rotate(90deg);
+        height: 30vw;
+    }
+
+    .bar{
+        transform: rotate(90deg);
+    }
+
+    .thirdBLock{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 22vw;
+    }
+    .flexBlock{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .bigBlocklever{
+        align-items: center;
+    }
+
+    .blackBar{
+        width: fit-content;
+    }
+
+    .lampBar{
+        width: 35vw;
+    }
+
+    .bigBlockPlanets{
+        padding: 1vw 1vw;
+    }
+
+    .Screen4{
+        display: flex;
+        justify-content: center;
+        height: 80vw;
+    }
+
+    .cornerRoundBig1{
+        top: 317vw;
+    }
+
+    .cornerRoundSmall1{
+        top: 319.5vw;
+    }
+
+    .cornerRoundBig3{
+        top: 317vw;
+
+    }
+
+    .cornerRoundSmall3{
+        top: 319.5vw;
+    }
+
+    .Gears{
+        transform: translate(-23vw, -100%);
+    }
+}
+
+
+@keyframes animationForDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+@keyframes animationForUp {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#letterUp{
+    animation: animationForUp 3s linear infinite;
+}
+
+#letterDown{
+    animation: animationForDown 3s linear infinite;
+}
+
+@keyframes animationSkaleUp {
+    0% {
+        height: 25%;
+    }
+    50% {
+        height: 75%;
+    }
+    100% {
+        height: 25%;
+    }
+}
+
+@keyframes animationSkaleDown {
+    0% {
+        height: 75%;
+    }
+    50% {
+        height: 25%;
+    }
+    100% {
+        height: 75%;
+    }
+}
+
+#animationForSaleUp{
+    animation: animationSkaleUp 2s linear infinite;
+}
+
+#animationForSaleDown{
+    animation: animationSkaleDown 2s linear infinite;
+}
+
+@keyframes LampBrown {
+    0% {
+        background-color: #7C6365;
+    }
+    50% {
+        background-color: #E0B36F;    
+    }
+    100% {
+        background-color: #7C6365;
+    }
+}
+
+@keyframes LampYelloy {
+    0% {
+        background-color: #E0B36F;  
+    }
+    50% {
+        background-color: #7C6365;
+    }
+    100% {
+        background-color: #E0B36F;  
+    }
+}
+
+#animationForLampBrown{
+    animation: LampBrown 1s step-start infinite;
+}
+
+#animationForLampYelloy{
+    animation: LampYelloy 1s step-start infinite;
+}
+
+@keyframes BlackSun {
+    0% {
+        background-image: url(../assets/images/switch1.svg); 
+    }
+    50% {
+        background-image: url(../assets/images/blackSun.svg);
+    }
+    100% {
+        background-image: url(../assets/images/switch1.svg); 
+    }
+}
+
+#animationForSun{
+    animation: BlackSun 4s step-start infinite;
+}
+
+@keyframes planetLeft {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes planetRight {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: -360deg;
+    }
+}
+
+#animationForPlanetLeft{
+    animation: planetLeft 4s linear infinite;
+}
+
+#animationForPlanetRight{
+    animation: planetRight 4s linear infinite;
+}
+
+
+@keyframes leverRotate {
+    0% {
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 35deg;
+    }
+    50%{
+        rotate: -35deg;
+    }
+    75%{
+        rotate: 35deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+#animationLeverRotate{
+    animation: leverRotate 5s linear infinite;
 }

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WorldSystemsWorkshop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="forHidden">
     <div class="cornerRoundBig UpLeft"></div>
     <div class="cornerRoundSmall UpLeft"></div>
     <div class="cornerRoundBig1 UpRight"></div>
@@ -18,40 +19,46 @@
     <div class="sections">
     <main>
         <section class="Screen1">
-            <img src="../WorldSystemsWorkshop/assets/images/disk.svg" class="diskSVG">
+            <div class="furstSvgs">
+            <img src="../WorldSystemsWorkshop/assets/images/gear_big_1.svg" alt="" class="gearBig1" id="letterUp">
+            <img src="../WorldSystemsWorkshop/assets/images/gear_small_1.svg" alt="" class="gearSmall1" id="letterDown">
+            <img src="../WorldSystemsWorkshop/assets/images/disk.svg" alt="" class="diskSVG">
+            <img src="../WorldSystemsWorkshop/assets/images/gear_small_2.svg" alt="" class="gearSmall2" id="letterDown  ">
+            <img src="../WorldSystemsWorkshop/assets/images/gear_big_2.svg" alt="" class="gearBig2" id="letterUp">
+            </div>
             <div class= "title">Reality Forge</div>
             <div class="lettersInRounds">
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">W</div>
+                    <div class="round" id="letterUp">W</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">O</div>
+                    <div class="round" id="letterDown">O</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">R</div>
+                    <div class="round" id="letterUp">R</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">K</div>
+                    <div class="round" id="letterDown">K</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">S</div>
+                    <div class="round" id="letterUp">S</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">H</div>
+                    <div class="round" id="letterDown">H</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">O</div>
+                    <div class="round" id="letterUp">O</div>
                 </div>
                 <div class="letterinRound">
                     <div class="stick"></div>
-                    <div class="round">P</div>
+                    <div class="round" id="letterDown">P</div>
                 </div>
             </div> 
         </section>
@@ -106,28 +113,29 @@
                     </div>
                 </div>
             </div>
+            <div class="flexBlock">
             <div class="secondBLock">
-                <div class="sumSVG"></div>
+                <div class="sumSVG" id="animationForSun"></div>
                 <div class="bar">
                     <div class="blackBar">
                         <div class="diagram">
-                            <div class="miniBlackBar"></div>
-                            <div class="miniBlackBar"></div>
-                            <div class="miniBlackBar"></div>
-                            <div class="miniBlackBar"></div>
-                            <div class="miniBlackBar"></div>
-                            <div class="miniBlackBar"></div>
+                            <div class="miniBlackBar" id="animationForSaleUp"></div>
+                            <div class="miniBlackBar" id="animationForSaleDown"></div>
+                            <div class="miniBlackBar" id="animationForSaleUp"></div>
+                            <div class="miniBlackBar" id="animationForSaleDown"></div>
+                            <div class="miniBlackBar" id="animationForSaleUp"></div>
+                            <div class="miniBlackBar" id="animationForSaleDown"></div>
                         </div>
                     </div>
                     <div class="lampBar">
                         <div class="lamps">
-                            <div class="lamp brown"></div>
-                            <div class="lamp brown"></div>
-                            <div class="lamp yellow"></div>
-                            <div class="lamp brown"></div>
-                            <div class="lamp yellow"></div>
-                            <div class="lamp yellow"></div>
-                            <div class="lamp brown"></div>
+                            <div class="lamp brown" id="animationForLampBrown"></div>
+                            <div class="lamp brown" id="animationForLampBrown"></div>
+                            <div class="lamp yellow" id="animationForLampYelloy"></div>
+                            <div class="lamp brown" id="animationForLampBrown"></div>
+                            <div class="lamp yellow" id="animationForLampYelloy"></div>
+                            <div class="lamp yellow" id="animationForLampYelloy"></div>
+                            <div class="lamp brown" id="animationForLampBrown"></div>
                         </div>
                     </div>
                 </div>
@@ -137,9 +145,9 @@
                     <div class="blockPlanetsButtons">
                         <div class="cosmos">
                             <div class="planets">
-                                <div class="planetsmall"></div>
-                                <div class="planetmedium"></div>
-                                <div class="planetbig"></div>
+                                <div class="planetsmall" id="animationForPlanetLeft"></div>
+                                <div class="planetmedium" id="animationForPlanetRight"></div>
+                                <div class="planetbig" id="animationForPlanetLeft"></div>
                             </div>
                         </div>
                         <div class="buttons"></div>
@@ -147,12 +155,22 @@
                 </div>
                 <div class="bigBlocklever">
                    <div class="baseLever">
-                        <div class="leverSvg"></div>
+                        <div class="leverSvg" id="animationLeverRotate"></div>
                    </div> 
                 </div>
             </div>
+            </div>
         </section>
         <section class="Screen4">
+            <div class="dinner">
+                <div class="breakSign">
+                    <div class="textBigBlock">
+                        <div class="text1">Перерыв на обед</div>
+                        <div class="text2">Глафира Тищенко БРИЦП251</div>
+                    </div>
+                </div>
+                <div class="lampsdinner"></div>
+            </div>
             <div class="Gears">
                 <div class="Gear1"></div>
                 <div class="Gear2"></div>
@@ -163,6 +181,6 @@
         </section>
     </main>
     </div>
-
+    </div>
 </body>
 </html>
